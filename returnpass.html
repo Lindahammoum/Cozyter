@@ -44,8 +44,8 @@
         <div class="container home">
             <div class="row justify-content-md-center justify-content-lg-center">
             <form method="" action="" class="p-5">
-                <h5 class="text-right text-lg-center">اعادة تعيين كلمة المرور</h5>
-                <p class="text-right text-lg-center addconf">قم بادخال كلمة المرور الجديدة</p>
+                <h5 class="text-right text-lg-center" style="text-align: right!important;">اعادة تعيين كلمة المرور</h5>
+                <p class="text-right text-lg-center addconf" style="text-align: right!important;">قم بادخال كلمة المرور الجديدة</p>
                 <div class="input-group p-0">
                     <input type="text" style="font-family: FontAwesome;"  class="form-control" placeholder="&#xf023 كلمة المرور  " aria-label="Username"
                            aria-describedby="basic-addon1">
@@ -54,11 +54,27 @@
                     <input type="text" style="font-family: FontAwesome;"  class="form-control" placeholder="&#xf023 التأكد من كلمة المرور  " aria-label="Username"
                            aria-describedby="basic-addon1">
                 </div>
-                <button class="btn sign-in2 m-0">إعادة التعيين</button>
-            </form>
+                
+                 <a type="submit" class="m-0 mt-4 btn bg2 sign-in2" data-toggle="modal" data-target="#exampleModalCenter">اعادة التعيين </a>          </form>
             </div>
         </div>
     <!--End inputs  -->
+       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="modal-flex">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <p class="done">تم التعيين بنجاح  !</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="footer">
         <p>جميع الحقوق محفوظة © 2021</p>
