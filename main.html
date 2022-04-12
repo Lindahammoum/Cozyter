@@ -99,7 +99,7 @@
   <div class="row justify-content-center">
     <div class="cont-card">
       <div class="card mb-3" style="border-radius: 18px;">
-        <img class="card-img-top newimg" style="border-radius: 0px;" src="assets/img/pizza.jpg" alt="Card image cap">
+        <img class="card-img-top newimg" src="assets/img/pizza.jpg" alt="Card image cap">
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div class="w-75">
@@ -129,30 +129,34 @@
           </div>
         </div>
       </div>
-      <div class="card mb-3" >
+       <div class="card mb-3" style="border-radius: 18px;">
         <img class="card-img-top newimg" src="assets/img/pizza.jpg" alt="Card image cap">
         <div class="card-body">
           <div class="d-flex justify-content-between">
-            <div class="w-75" style="width: 36%!important;  padding-top: 15%;">
-              <h1>بيتزا ببروني</h1>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <a href="" data-toggle="modal" data-target="#exampleModalCenter">الاضافات</a>
+            <div class="w-75">
+              <h1 style="color: #fd7c16;">بيتزا ببروني</h1>
+              <p style="color: #3a3a3a; font-weight: 500;">Lorem ipsum dolor sit amet...</p>
 
             </div>
-            <div class="w-25">
-              <p style="font-size: 18px">10.65 ريال</p>
-              <button style="padding-left: 11%; padding-top: 1%; padding-bottom: 1%; padding-right: 11%;" class="btn add addMe" onclick="var i =document.getElementById('counter2').innerText; i++; document.getElementById('counter').innerText= i">+</button>
-              <a id="counter2" class="theCount">0</a>
-              <button style="padding-left: 11%; padding-top: 1%; padding-bottom: 1%; padding-right: 11%;" class="btn add main" onclick="var i =document.getElementById('counter2').innerText; i--; document.getElementById('counter').innerText= i">-</button>
-
-
+            <div class="w-25"  style="width: 36%!important;  padding-top: 15%;">
+              <p style="font-size: 18px; style="color: black !important;font-weight: 600;">10.65 ر.س</p>
+         <!--     <button style="padding-left: 11%; padding-top: 1%; padding-bottom: 1%; padding-right: 11%;" class="btn add addMe" onclick="var i =document.getElementById('counter').innerText; i++; document.getElementById('counter').innerText= i">+</button>
+              <a id="counter" class="theCount">0</a>
+              <button style="padding-left: 11%; padding-top: 1%; padding-bottom: 1%; padding-right: 11%;" class="btn add main" onclick="var i =document.getElementById('counter').innerText; i--; document.getElementById('counter').innerText= i">-</button>
+-->
             </div>
           </div>
           <div class="text-right new">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perspiciatis autem nobis sed, soluta molestiae nostrum minus repellendus, est tempora nemo.</p>
-          </div>
+                     <a href="" data-toggle="modal" data-target="#exampleModalCenter">الاضافات</a>
+
+            </div>
           <div class="text-right new m-0">
-            <button class="btn orange float-left" id="add_to_cart2">أضف للسلة</button>
+            <button style="padding-left: 11%; padding-top: 1%; padding-bottom: 1%; padding-right: 11%;" class="btn add addMe" onclick="var i =document.getElementById('counter').innerText; i++; document.getElementById('counter').innerText= i">+</button>
+              <a id="counter" class="theCount">0</a>
+              <button style="padding-left: 11%; padding-top: 1%; padding-bottom: 1%; padding-right: 11%;" class="btn add main" onclick="var i =document.getElementById('counter').innerText; i--; document.getElementById('counter').innerText= i">-</button>
+
+            <button class="btn orange float-left" id="add_to_cart1">أضف للسلة</button>
           </div>
         </div>
       </div>
