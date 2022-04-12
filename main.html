@@ -43,7 +43,10 @@
   <div class="dropdown-divider"></div>
   <a class="text-right   d-flex align-items-center py-3" href="personal.html"><i class="far fa-user-circle"></i> الملف الشخصي</a>
 </div>
-<div class="third-nav" >
+<div class="third-nav" style="    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;">
   <div class="container-fluid">
 
     <div class="row">
@@ -75,17 +78,26 @@
 <!--  </div>-->
 <!--</div>-->
   <div class="container home">
-    <p class="name">اهلا
+    <p class="name" position: sticky;
+    top: 13%;
+    z-index: 1;
+    background-color: white;>اهلا
       <span>عبد الله الشريف</span>
     </p>
-  <div class="input-group justify-content-center">
+  <div class="input-group justify-content-center" style="position: sticky;
+    top: 20%;
+    z-index: 1;
+    background-color: white;">
     <div class="form-outline" style="font-family: FontAwesome;">
       <input type="search" id="form1"  style="font-family: FontAwesome;" class="form-control" placeholder="&#xF002;  البحث  " />
     </div>
   </div>
 
 
-  <div class="owl-carousel mr-4" style="height: 70px;">
+  <div class="owl-carousel mr-4" style="height: 70px; position: sticky;
+    top: 27%;
+    z-index: 1;
+    background-color: white;">
     <div class="box2 act2" onclick="$('.box2').removeClass('act2');$(this).addClass('act2')">الاطباق الرئيسية</div>
     <div class="box2" onclick="$('.box2').removeClass('act2');$(this).addClass('act2')">الاطباق الثانوية</div>
     <div class="box2" onclick="$('.box2').removeClass('act2');$(this).addClass('act2')">المقبلات</div>
