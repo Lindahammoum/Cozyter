@@ -45,7 +45,7 @@
     margin: 0;
     width: 100% !important;
 }
-.files input:focus{     outline: 2px dashed #92b0b3;  outline-offset: -10px;
+.files input:focus{     outline: 2px dashed #dde2e6;  outline-offset: -10px;
     -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
     transition: outline-offset .15s ease-in-out, background-color .15s linear; border:1px solid #92b0b3;
  }
@@ -64,7 +64,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.color input{ background-color:#f1f1f1;}
+.color input{ background-color:#ffffff;}
 .files:before {
     position: absolute;
     bottom: 10px;
@@ -156,12 +156,12 @@
                     </div>
                     <!-- begin upload image -->
   <div class="form-group files color">
-                <label>Upload Your File </label>
+                <label>رفع صورة </label>
                 <input type="file" class="form-control" multiple="">
               </div>
                     <div class="input-group p-0">
-                        <input type="file" id="inpFile" name="" style="height:0px;"  />
-                        <div class="image-preview col-md-12"  id="imagePreview" style="border: #dde2e6 dashed 2px; height: 180px; background: #fff; box-sizing: border-box; border-radius: 3px; margin: auto">
+                        <input class="file-upload" type="file" id="inpFile" name="" style="height:0px;"  />
+                        <div class="image-preview file-upload col-md-12"  id="imagePreview" style="border: #dde2e6 dashed 2px; height: 180px; background: #fff; box-sizing: border-box; border-radius: 3px; margin: auto">
                           <img src="" alt="Image Preview" height="160px" class="image-preview_image">
                           <span class="image-preview_default-text">
                             <h5 onclick="chooseFile();" style="cursor: pointer;">
@@ -192,7 +192,7 @@
 <!-- Begin script custom button upload -->
 <script>
   function chooseFile() {
-  $("#inpFile").click();
+$('.file-upload').file_upload();
   }
 </script>
 <!-- End script custom button upload -->
