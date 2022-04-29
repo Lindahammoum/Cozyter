@@ -19,6 +19,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
@@ -111,8 +112,15 @@
                         aria-describedby="basic-addon2"></textarea>
                     </div>
                     <!-- begin upload image -->
+                  <div class="file-upload-wrapper">
+   <input type="file" id="input-file-now-custom-2" class="file-upload"
+  data-height="500" />
+</div>
+                  <script>
+                    $('.file-upload').file_upload();
+</script>
                     <div class="input-group p-0">
-                        <input type="file" id="inpFile" name="" style="height:0px; overflow:hidden" />
+                        <input type="file" id="inpFile" name="" style="height:0px;  />
                         <div class="image-preview col-md-12"  id="imagePreview" style="border: #dde2e6 dashed 2px; height: 180px; background: #fff; box-sizing: border-box; border-radius: 3px; margin: auto">
                           <img src="" alt="Image Preview" height="160px" class="image-preview_image">
                           <span class="image-preview_default-text">
