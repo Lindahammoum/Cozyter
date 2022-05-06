@@ -2,7 +2,15 @@
 <html lang="ar" dir="rtl">
 
 <head>
-  <style>
+   <style>
+    input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+}
+   
   .badge{
     margin-top: 5px;
      position: absolute;
@@ -47,7 +55,9 @@
       الرئيسية
     </a>
     <div class="dropdown-divider"></div>
-    <a class="text-right" style="font-size: 17px;" href="qrcode.html"><i data-feather="camera"></i>مسح QR كود</a>
+     <label class="custom-file-upload text-right" style="font-size: 17px;"><input type="file"accept="image/*" capture="camera"/>
+ <i data-feather="camera"></i>مسح QR كود</label>
+<!--    <a class="text-right" style="font-size: 17px;" href="qrcode.html"><i data-feather="camera"></i>مسح QR كود</a>-->
     <div class="dropdown-divider"></div>
     <a class="text-right" style="font-size: 17px;" href="build.html"><i data-feather="calendar"></i>
       حجز الطاولات
