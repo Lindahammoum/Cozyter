@@ -60,23 +60,14 @@
               <p class="mt-3" style="font-size: 24px;">بيانات المطعم او المقهى</p>
               <form>
                 <div class="form-group w-75">
-                <button type="button" 
-    name="btnScanBarcode" 
-    id="btnScanBarcode" 
-    style="height:56px;border-width:0px;"
-    onclick="javascript:startBarcodeScanner();">
-<img src="http://berrywing.com/images/barcode_2d.png" style="height: 50px; width: 50px">
-</button>
+   
 
-<script>
-function startBarcodeScanner() 
-{    
-	alert("Using client JavaScript to start scanner.");
-	window.location.href = 'bwstw://startscanner?field=txtField2';
-}
-</script> 
-
-                  <button onclick="window.location.href='bwstw://startscanner'" type="button">
+                  <button onClick="showCamera('Android! Start Camera')" type="button">
+			  <script type="text/javascript">
+    function showCamera(toast) {
+        Android.showCamera(toast);
+    }
+</script>
                  <input type="file" accept="image/*" capture="camera">
 
                   <label for="exampleInputEmail1">اسم المطعم على الفاتورة <span style="color: red;">*</span></label>
