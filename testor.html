@@ -182,8 +182,25 @@
              <button style="padding-left: 10%;
     padding-top: 1%;
     padding-bottom: 1%;
-    padding-right: 10%;" class="btn add addMe" onclick="var i =document.getElementById('counter').innerText; i++; document.getElementById('counter').innerText= i">+</button>
-              <a id="counter" class="theCount">0</a>
+    padding-right: 10%;" class="btn add addMe addtocart" >+</button>
+    <script >
+    	$(document).ready(function(){
+   //create variable
+   var counts = 0;
+   $(".addtocart").click(function () {
+   //to number and increase to 1 on each click
+      counts += +1;
+      $(".cart-counter").animate({
+   //show span with number
+                opacity: 1
+            }, 300, function () {
+   //write number of counts into span
+                $(this).text(counts);
+            });
+        }); 
+});
+    </script>
+              <a id="counter" class="cart-counter">0</a>
               <button style="padding-left: 11%;
     padding-top: 1%;
     padding-bottom: 1%;
